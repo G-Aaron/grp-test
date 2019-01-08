@@ -3,7 +3,7 @@ package com.grp.test.thread.lockextend;
 import com.grp.test.thread.TestObject;
 
 /**
- * <p>Title: ${file_name}</p>
+ * <p>Title: 重写同步方法</p>
  * <p>Description: </p>
  *
  * @version 1.0

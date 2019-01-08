@@ -12,15 +12,15 @@ import com.grp.test.thread.TestObject;
  **/
 public class LockTest {
     public static void main(String[] args){
-        TestObject object = new TestObject("1");
-        ThreadTree t1 = new ThreadTree("task 1",object);
-        ThreadTree t2 = new ThreadTree("task 2",object);
-        t1.start();
-        t2.start();
         ExtendTestObject extendTestObject = new ExtendTestObject("2");
         ThreadFive t3 = new ThreadFive("task 3",extendTestObject);
         ThreadFive t4 = new ThreadFive("task 4",extendTestObject);
         t3.start();
         t4.start();
+        TempTestObject tempTestObject = new TempTestObject("2");
+        ThreadSix t5 = new ThreadSix("task 5",tempTestObject);
+        ThreadSix t6 = new ThreadSix("task 6",tempTestObject);
+        t5.start();
+        t6.start();
     }
 }

@@ -3,7 +3,7 @@ package com.grp.test.thread.lockextend;
 import com.grp.test.thread.TestObject;
 
 /**
- * <p>Title: ${file_name}</p>
+ * <p>Title: 不重新同步方法</p>
  * <p>Description: </p>
  *
  * @version 1.0
@@ -14,14 +14,4 @@ public class TempTestObject extends TestObject {
     public TempTestObject(String name) {
         super(name);
     }
-    @Override
-    public void print(){
-        try {
-            Thread.sleep(1000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println(Thread.currentThread().getName());
-    }
-
 }
