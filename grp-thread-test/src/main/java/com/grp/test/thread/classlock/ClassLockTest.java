@@ -1,6 +1,7 @@
 package com.grp.test.thread.classlock;
 
 import com.grp.test.thread.TestObject;
+import com.grp.test.thread.classlock.ThreadTwo;
 
 /**
  * <p>Title: ${file_name}</p>
