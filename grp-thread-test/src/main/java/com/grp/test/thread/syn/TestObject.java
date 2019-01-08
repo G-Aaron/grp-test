@@ -1,4 +1,4 @@
-package com.grp.test.thread;
+package com.grp.test.thread.syn;
 
 /**
  * <p>Title: ${file_name}</p>

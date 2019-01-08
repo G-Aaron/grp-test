@@ -1,4 +1,4 @@
-package com.grp.test.thread.lockextend;
+package com.grp.test.thread.syn.lockextend;
 
 /**
  * <p>Title: ${file_name}</p>

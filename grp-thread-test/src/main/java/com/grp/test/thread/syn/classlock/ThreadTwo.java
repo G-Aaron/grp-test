@@ -1,6 +1,6 @@
-package com.grp.test.thread.lockextend;
+package com.grp.test.thread.syn.classlock;
 
-import com.grp.test.thread.TestObject;
+import com.grp.test.thread.syn.TestObject;
 
 /**
  * <p>Title: ${file_name}</p>
@@ -10,21 +10,21 @@ import com.grp.test.thread.TestObject;
  * @author: gaorenpeng
  * @date: 2019-01-08 15:32
  **/
-public class ThreadFour extends Thread {
+public class ThreadTwo extends Thread {
     protected String name;
     protected TestObject object;
-    public ThreadFour(String name, TestObject object) {
+    public ThreadTwo(String name, TestObject object) {
         this.name = name;
         this.object = object;
     }
 
     @Override
     public void run() {
-        this.object.print();
+        this.create(this.object);
     }
 
     public void create(TestObject object){
-        synchronized(ThreadFour.class){
+        synchronized(ThreadTwo.class){
             try {
                 Thread.sleep(1000L);
             } catch (InterruptedException e) {

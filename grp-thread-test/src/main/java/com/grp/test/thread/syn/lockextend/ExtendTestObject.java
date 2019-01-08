@@ -1,6 +1,6 @@
-package com.grp.test.thread.lockextend;
+package com.grp.test.thread.syn.lockextend;
 
-import com.grp.test.thread.TestObject;
+import com.grp.test.thread.syn.TestObject;
 
 /**
  * <p>Title: 重写同步方法</p>

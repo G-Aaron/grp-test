@@ -6,4 +6,4 @@
  * @date: 2019-01-08 16:59
  * @version 1.0
  **/
-package com.grp.test.thread.lockextend;
+package com.grp.test.thread.syn.lockextend;

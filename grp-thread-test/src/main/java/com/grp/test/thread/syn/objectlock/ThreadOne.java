@@ -1,6 +1,6 @@
-package com.grp.test.thread.objectlock;
+package com.grp.test.thread.syn.objectlock;
 
-import com.grp.test.thread.TestObject;
+import com.grp.test.thread.syn.TestObject;
 
 /**
  * <p>Title: ${file_name}</p>

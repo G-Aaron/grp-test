@@ -1,6 +1,6 @@
-package com.grp.test.thread.lockextend;
+package com.grp.test.thread.syn.lockextend;
 
-import com.grp.test.thread.TestObject;
+import com.grp.test.thread.syn.TestObject;
 
 /**
  * <p>Title: ${file_name}</p>
