@@ -10,8 +10,8 @@ import com.grp.test.thread.TestObject;
  * @author: gaorenpeng
  * @date: 2019-01-08 16:50
  **/
-public class ExtendTestObject extends TestObject {
-    public ExtendTestObject(String name) {
+public class TempTestObject extends TestObject {
+    public TempTestObject(String name) {
         super(name);
     }
     @Override
