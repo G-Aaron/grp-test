@@ -8,15 +8,13 @@ package com.grp.test.thread;
  * @author: gaorenpeng
  * @date: 2019-01-08 15:32
  **/
-public class T2 extends Thread {
+public class ThreadDemo extends Thread {
     private String name;
-    public T2(String name) {
+    public ThreadDemo(String name) {
         this.name = name;
     }
 
     @Override
     public void run() {
-
-
     }
 }

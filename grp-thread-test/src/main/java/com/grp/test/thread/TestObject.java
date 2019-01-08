@@ -1,4 +1,4 @@
-package com.grp.test.thread.objectlock;
+package com.grp.test.thread;
 
 /**
  * <p>Title: ${file_name}</p>
@@ -9,7 +9,7 @@ package com.grp.test.thread.objectlock;
  * @date: 2019-01-08 15:38
  **/
 public class TestObject {
-     private String name = "1";
+     private String name;
 
      public TestObject(String name){
          this.name = name;

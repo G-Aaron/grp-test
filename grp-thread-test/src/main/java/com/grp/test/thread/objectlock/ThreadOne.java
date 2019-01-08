@@ -1,5 +1,7 @@
 package com.grp.test.thread.objectlock;
 
+import com.grp.test.thread.TestObject;
+
 /**
  * <p>Title: ${file_name}</p>
  * <p>Description: </p>
@@ -8,10 +10,10 @@ package com.grp.test.thread.objectlock;
  * @author: gaorenpeng
  * @date: 2019-01-08 15:32
  **/
-public class T1 extends Thread {
+public class ThreadOne extends Thread {
     private String name;
     private TestObject object;
-    public T1(String name, TestObject object) {
+    public ThreadOne(String name, TestObject object) {
         this.name = name;
         this.object = object;
     }
