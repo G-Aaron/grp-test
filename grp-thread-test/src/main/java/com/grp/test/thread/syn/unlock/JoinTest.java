@@ -2,7 +2,7 @@ package com.grp.test.thread.syn.unlock;
 
 /**
  * <p>Title: join 释放锁吗 不释放</p>
- * <p>Description: </p>
+ * <p>Description: 只是放 调用线程 的同步锁</p>
  *
  * @version 1.0
  * @author: gaorenpeng
@@ -13,6 +13,7 @@ public class JoinTest implements Runnable {
     public JoinTest(String value){
         this.value = value;
     }
+    @Override
     public void run() {
         final Thread thread = new Thread(new Runnable() {
             public void run() {
@@ -31,7 +32,7 @@ public class JoinTest implements Runnable {
             System.out.println(value);
             thread.start();
             try {
-                thread.join(10000);
+                thread.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -42,6 +43,5 @@ public class JoinTest implements Runnable {
         String value = "111";
         Thread thread = new Thread(new JoinTest(value));
         thread.start();
-        thread.join();
     }
 }

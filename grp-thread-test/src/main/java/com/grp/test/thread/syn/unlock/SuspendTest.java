@@ -1,7 +1,7 @@
 package com.grp.test.thread.syn.unlock;
 
 /**
- * <p>Title: suspend 释放锁吗 不释放</p>
+ * <p>Title: suspend sleep释放锁吗 不释放</p>
  * <p>Description: stop 抛异常？</p>
  *
  * @version 1.0

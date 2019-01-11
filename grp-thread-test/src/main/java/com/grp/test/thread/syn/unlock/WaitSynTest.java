@@ -2,7 +2,7 @@ package com.grp.test.thread.syn.unlock;
 
 /**
  * <p>Title: wait 释放锁吗 放</p>
- * <p>Description: wait notice 只能在同步代码中使用？</p>
+ * <p>Description: wait notice 只能在 调用对象的同步代码中使用</p>
  *
  * @version 1.0
  * @author: gaorenpeng
@@ -15,6 +15,7 @@ public class WaitSynTest implements Runnable{
     public WaitSynTest(String value){
         this.value = value;
     }
+    @Override
     public void run() {
         synchronized (value){
             try {
