@@ -16,7 +16,8 @@ public class IoInterrupt implements Runnable {
 		thread.interrupt();
 		System.out.println("interrupt state = " + thread.isInterrupted());
 	}
- 
+
+	@Override
 	public void run() {
 		try {
 			ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
