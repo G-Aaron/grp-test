@@ -1,11 +1,11 @@
 package com.grp.test.thread;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.locks.LockSupport;
 
 /**
  * <p>Title: ${file_name}</p>
- * <p>Description: </p>
- *
+ * <p>Description: 基于 {@link LockSupport#parkNanos(Object, long)}</p>
  * @version 1.0
  * @author: gaorenpeng
  * @date: 2019-01-16 15:47
