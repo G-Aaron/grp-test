@@ -123,7 +123,7 @@ public class TopTen {
 			 * Register UDF module
 			 * Registration only needs to be done after a change in the UDF module.
 			 */
-			RegisterTask rt = as.client.register(null, "udf/leaderboard.lua", "leaderboard.lua", Language.LUA);
+			RegisterTask rt = as.client.register(null, "aerospike-top-10-aggregation-test/udf/leaderboard.lua", "leaderboard.lua", Language.LUA);
 			rt.waitTillComplete();
 			
 			if (cl.hasOption("l")) {
