@@ -1,29 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.aerospike</groupId>
-	<artifactId>aerospike-top-10</artifactId>
+	<groupId>com.grp.test</groupId>
+	<artifactId>aerospike-top-10-test</artifactId>
 	<version>1.0</version>
-	<name>aerospike-top-10</name>
-	<organization>
-		<name>Aerospike Inc.</name>
-		<url>http://www.aerospike.com</url>
-	</organization>
+	<name>aerospike-top-10-test</name>
 
-	<developers>
-		<developer>
-			<id>Peter Milne</id>
-			<name>Peter Milne</name>
-			<email>helipilot50@gmail.com</email>
-			<url>http://www.aerospike.com</url>
-			<organization>Aerospike Inc.</organization>
-			<organizationUrl>http://www.aerospike.com</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-6</timezone>
-		</developer>
-	</developers>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
+	</properties>
+
 	<dependencies>
 		<!-- Aerospike client. -->
 		<dependency>
@@ -57,13 +46,13 @@
 	</dependencies>
 	<build>
 		<plugins>
-
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 			<plugin>

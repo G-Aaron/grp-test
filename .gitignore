@@ -23,3 +23,5 @@
 hs_err_pid*
 /.idea/
 /grp-thread-test/grp-thread-test.iml
+/aerospike-top-10-aggregation-test/aerospike-top-10.iml
+/aerospike-top-10-aggregation-test/aerospike-top-10-test.iml
