@@ -19,8 +19,10 @@ public class ParkTest implements Runnable{
     public void run() {
 
         while (true){
-            System.out.println("111");
-            LockSupport.park( );
+            synchronized (value){
+                System.out.println("111");
+                LockSupport.park( );
+            }
         }
     }
 
@@ -30,8 +32,10 @@ public class ParkTest implements Runnable{
         thread.start();
         Thread.sleep(3000);
         while (true){
-            System.out.println("222");
-            LockSupport.unpark(thread);
+            synchronized (value){
+                System.out.println("222");
+                LockSupport.unpark(thread);
+            }
         }
     }
 }
